@@ -21,11 +21,12 @@
         <!-- End Polymer imports -->
 
         <!-- Global Styles -->
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" shim-shadowdom/>
     </head>
     <body fullbleed unresolved touch-action="auto">
-        <core-scaffold>
-            <core-header-panel navigation flex>
+        <!-- Smoother transition to set responsiveWidth to 1000px than to wait -->
+        <core-scaffold responsiveWidth="1000px">
+            <core-header-panel navigation flex mode="standard">
                 <!-- Nav -->
                 <core-toolbar id="navheader">
                     <span>Menu</span>
@@ -40,20 +41,40 @@
             <span tool>Brian C. Tomlinson</span>
 
             <!-- Content -->
-            <div class="container" horizontal layout>
-                <content-card flex>
+            <div class="container" layout horizontal>
+                <content-card>
                     <img width="70" height="70" src="img/me.jpg">
-                    <h2>Card 1 Title</h2>
+                    <h2>Card A1 Title</h2>
                     <p>Content</p>
                 </content-card>
-
-                <content-card flex>
+                <content-card>
                     <img width="70" height="70" src="img/me.jpg">
-                    <h2>Card 2 Title</h2>
+                    <h2>Card A2 Title</h2>
+                    <p>Content</p>
+                </content-card>
+                <content-card>
+                    <img width="70" height="70" src="img/me.jpg">
+                    <h2>Card A3 Title</h2>
                     <p>Content</p>
                 </content-card>
             </div>
-
+            <div class="container" layout horizontal>
+                <content-card>
+                    <img width="70" height="70" src="img/me.jpg">
+                    <h2>Card B1 Title</h2>
+                    <p>Content</p>
+                </content-card>
+                <content-card>
+                    <img width="70" height="70" src="img/me.jpg">
+                    <h2>Card B2 Title</h2>
+                    <p>Content</p>
+                </content-card>
+                <content-card>
+                    <img width="70" height="70" src="img/me.jpg">
+                    <h2>Card B3 Title</h2>
+                    <p>Content</p>
+                </content-card>
+            </div>
         </core-scaffold>
         <script>
         </script>

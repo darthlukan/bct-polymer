@@ -2,19 +2,22 @@ html, body {
     height: 100%;
     margin: 0;
     background: url("../img/dark-grey-tile.png") repeat fixed;
-    font-robotofont-family: 'RobotoDraft', sans-serif;
+    font-family: 'RobotoDraft', sans-serif;
 }
 .container {
-    width: 90% !important;
+    width: 400px;
     margin: auto;
     padding: auto;
 }
-@media (min-width: 481px) {
-    #tabs {
-        width: 200px;
-    }
+@media all and (min-width: 481px) {
     .container {
-      width: 400px;
+        width: 100%;
+    }
+}
+@media all and (max-width: 800px) {
+    .container {
+        width: 100%;
+        height: 100%;
     }
 }
 core-header-panel {
@@ -38,14 +41,6 @@ core-scaffold::shadow core-toolbar {
 core-scaffold::shadow core-header-panel {
     background: url("../img/dark-grey-tile.png") repeat fixed;
     color: #DBDBDB;
-}
-#tabs {
-    width: 100%;
-    margin: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 #navheader {
     background: #191919;
