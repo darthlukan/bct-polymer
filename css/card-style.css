@@ -3,7 +3,7 @@
     position: relative;
     float: left;
     background-color: #191919;
-    padding: 20px;
+    padding: 0.5em;
     margin: 0.5em;
     width: 100%;
     color: #DBDBDB;
@@ -11,7 +11,7 @@
     font-weight: 300;
 }
 .card-header {
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 polyfill-next-selector { content: '.card-header h2'; }
 .card-header ::content h2 {
