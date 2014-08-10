@@ -21,8 +21,21 @@ core-header-panel {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+core-header-panel::shadow div {
+    background: #191919;
+    color: #DBDBDB;
+}
 core-toolbar {
     background: #191919;
+    background-color: #191919;
+    color: #DBDBDB;
+}
+core-scaffold::shadow core-toolbar {
+    background: #191919;
+    color: #DBDBDB;
+}
+core-scaffold::shadow core-header-panel {
+    background: url("../img/dark-grey-tile.png") repeat fixed;
     color: #DBDBDB;
 }
 #tabs {
@@ -33,21 +46,8 @@ core-toolbar {
     -ms-user-select: none;
     user-select: none;
 }
-
-core-header-panel {
-  height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-core-toolbar {
-  background: #191919;
-  color: white;
-}
-#tabs {
-  width: 100%;
-  margin: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+#navheader {
+    background: #191919;
+    background-color: #191919;
+    color: #DBDBDB;
 }
