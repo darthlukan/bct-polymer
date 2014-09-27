@@ -5,7 +5,6 @@
     background-color: #191919;
     padding: 0.5em;
     width: 80%;
-    height: 80%;
     margin: 0.5em;
     color: #DBDBDB;
     font-size: 1.2rem;
@@ -13,9 +12,9 @@
     z-index: 5;
 }
 
-@media all and min-width(481px) {
+@media all and (min-width: 481px) {
     :host {
-        max-width: 30%;
+        max-width: 90%;
     }
 }
 .card-header {
